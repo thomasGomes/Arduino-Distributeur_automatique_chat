@@ -20,7 +20,7 @@ void loop() {
   int ctsValue = digitalRead(ctsPin);
   
   if (ctsValue == HIGH){
-    myStepper.step(stepsPerRevolution*4);
+    myStepper.step(-stepsPerRevolution*4);
 
     reset();
   }
